@@ -1,5 +1,4 @@
 #include <GL/gl.h>
-#include <iostream>
 #include <GL/glu.h>
 #include <GL/glut.h>
 #include "shapes.h"
@@ -7,7 +6,7 @@ using namespace std;
 
 void draw_obstacle(char ch) {
 
-    //Obstacle
+    // Obstacle
     int R, G, B;
     if (ch == 'R') {
         R = 176;
@@ -17,9 +16,6 @@ void draw_obstacle(char ch) {
         R = 0;
         G = 107;
         B = 172;
-    } else {
-        cout << "Invalid color" << endl;
-        return;
     }
 
     // Drawing cylinder
@@ -36,31 +32,37 @@ void draw_obstacle(char ch) {
 
     glBegin(GL_QUADS);
 
+    glNormal3d(0.0, 1.0, 0.0);
     glVertex3i(0, 3, 0);
     glVertex3i(97, 3, 0);
     glVertex3i(57, 3, 195);
     glVertex3i(0, 3, 195);
 
+    glNormal3d(0.0, -1.0, 0.0);
     glVertex3i(0, -3, 0);
     glVertex3i(0, -3, 195);
     glVertex3i(57, -3, 195);
     glVertex3i(97, -3, 0);
 
+    glNormal3d(0.0, 0.0, -1.0);
     glVertex3i(0, -3, 0);
     glVertex3i(97, -3, 0);
     glVertex3i(97, 3, 0);
     glVertex3i(0, 3, 0);
 
+    glNormal3d(0.0, 0.0, 1.0);
     glVertex3i(0, -3, 195);
     glVertex3i(0, 3, 195);
     glVertex3i(57, 3, 195);
     glVertex3i(57, -3, 195);
     
+    glNormal3d(1.0, 0.0, 0.0);
     glVertex3i(0, -3, 0);
     glVertex3i(0, 3, 0);
     glVertex3i(0, 3, 195);
     glVertex3i(0, -3, 195);
 
+    glNormal3d(0.97, 0, 0.2);
     glVertex3i(97, -3, 0);
     glVertex3i(57, -3, 195);
     glVertex3i(57, 3, 195);
@@ -74,31 +76,37 @@ void draw_obstacle(char ch) {
 
     glBegin(GL_QUADS);
 
+    glNormal3d(0.0, 1.0, 0.0);
     glVertex3i(0, 3, 0);
     glVertex3i(97, 3, 0);
     glVertex3i(57, 3, 195);
     glVertex3i(0, 3, 195);
 
+    glNormal3d(0.0, -1.0, 0.0);
     glVertex3i(0, -3, 0);
     glVertex3i(0, -3, 195);
     glVertex3i(57, -3, 195);
     glVertex3i(97, -3, 0);
 
+    glNormal3d(0.0, 0.0, -1.0);
     glVertex3i(0, -3, 0);
     glVertex3i(97, -3, 0);
     glVertex3i(97, 3, 0);
     glVertex3i(0, 3, 0);
 
+    glNormal3d(0.0, 0.0, 1.0);
     glVertex3i(0, -3, 195);
     glVertex3i(0, 3, 195);
     glVertex3i(57, 3, 195);
     glVertex3i(57, -3, 195);
     
+    glNormal3d(1.0, 0.0, 0.0);
     glVertex3i(0, -3, 0);
     glVertex3i(0, 3, 0);
     glVertex3i(0, 3, 195);
     glVertex3i(0, -3, 195);
 
+    glNormal3d(0.97, 0, 0.2);
     glVertex3i(97, -3, 0);
     glVertex3i(57, -3, 195);
     glVertex3i(57, 3, 195);
@@ -112,31 +120,37 @@ void draw_obstacle(char ch) {
 
     glBegin(GL_QUADS);
 
+    glNormal3d(0.0, 1.0, 0.0);
     glVertex3i(0, 3, 0);
     glVertex3i(97, 3, 0);
     glVertex3i(57, 3, 195);
     glVertex3i(0, 3, 195);
 
+    glNormal3d(0.0, -1.0, 0.0);
     glVertex3i(0, -3, 0);
     glVertex3i(0, -3, 195);
     glVertex3i(57, -3, 195);
     glVertex3i(97, -3, 0);
 
+    glNormal3d(0.0, 0.0, -1.0);
     glVertex3i(0, -3, 0);
     glVertex3i(97, -3, 0);
     glVertex3i(97, 3, 0);
     glVertex3i(0, 3, 0);
 
+    glNormal3d(0.0, 0.0, 1.0);
     glVertex3i(0, -3, 195);
     glVertex3i(0, 3, 195);
     glVertex3i(57, 3, 195);
     glVertex3i(57, -3, 195);
     
+    glNormal3d(1.0, 0.0, 0.0);
     glVertex3i(0, -3, 0);
     glVertex3i(0, 3, 0);
     glVertex3i(0, 3, 195);
     glVertex3i(0, -3, 195);
 
+    glNormal3d(0.97, 0, 0.2);
     glVertex3i(97, -3, 0);
     glVertex3i(57, -3, 195);
     glVertex3i(57, 3, 195);
